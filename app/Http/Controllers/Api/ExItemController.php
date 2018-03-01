@@ -6,23 +6,17 @@ class ExItemController extends ApiController {
 
     protected $selectables = [
     	"id",
-        "name",
-    	"slug",
-    	"description",
+        "value",
     	"active",
     ];
     protected $filterables = [
     	"id",
-        "name",
-    	"slug",
-    	"description",
+        "value",
     	"active",
     ];
     protected $orderables = [
     	"id",
-        "name",
-    	"slug",
-    	"description",
+        "value",
     	"active",
     ];
 

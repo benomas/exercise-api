@@ -4,11 +4,9 @@ return [
     "fields" => [
 		"active"      =>"Activo",
 		"created_at"  =>"Creado en",
-		"description" =>"Descripción",
 		"id"          =>"Identificador",
 		"list_id"     =>"Id Lista",
-		"name"        =>"Nombre",
-		"slug"        =>"Slug",
+		"value"        =>"Nombre",
 		"updated_at"  =>"Actualizado en",
     ],
     "foreign_fields"=>[

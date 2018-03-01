@@ -14,16 +14,10 @@ class ExItemRequest extends CrudRequest
     public function defaultRules()
     {
         $this->rules=[
-            "description" => "required",
-            "name"        => "required|unique:ex_lists,name",
-            "slug"        => "required|unique:ex_lists,slug",
-            "list_id"     => "required|key_exist:ex_lists",
-            "active"      => "boolean",
+            "value"   => "required",
+            "list_id" => "required|key_exist:ex_lists",
+            "active"  => "boolean",
         ];
     }
 
-    public function putUpdate(){
-        $this->rules["name"] .=",".$this->currentActionId;
-        $this->rules["slug"] .=",".$this->currentActionId;
-    }
 }

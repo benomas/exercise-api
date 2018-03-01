@@ -6,10 +6,8 @@ class ExItem extends BaseModel {
 
     protected $fillable = [
 		"active",
-		"description",
 		"list_id",
-		"name",
-		"slug",
+		"value",
     ];
 
 //Relationships
