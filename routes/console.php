@@ -96,7 +96,7 @@ Artisan::command($proyectSlug.':lite-up', function () {
 Artisan::command($proyectSlug.':down {destroyMigrations?}', function ($destroyMigrations=null) {
  
 	$commands = [
-		"php artisan migrate:rollback"
+		"php artisan migrate:reset"
 	];
 
 	foreach ($commands as $command) {
