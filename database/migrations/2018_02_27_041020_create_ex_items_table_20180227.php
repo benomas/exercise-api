@@ -12,7 +12,7 @@ class CreateExItemsTable20180227 extends BaseMigration
             Schema::create($this->mainTable, function (Blueprint $table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id');
-                $table->string('value');
+                $table->string('value')->nullable();
                 $table->boolean('active')->default(true);
                 $table->timestamps();
                 $table->integer('created_by')->nullable();

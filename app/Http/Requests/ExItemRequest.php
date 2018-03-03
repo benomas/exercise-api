@@ -14,9 +14,10 @@ class ExItemRequest extends CrudRequest
     public function defaultRules()
     {
         $this->rules=[
-            "value"   => "required",
-            "list_id" => "required|key_exist:ex_lists",
-            "active"  => "boolean",
+            //validation disabled for simplify list
+            //"value"      => "required",
+            "ex_list_id" => "required|key_exist:ex_lists",
+            "active"     => "boolean",
         ];
     }
 

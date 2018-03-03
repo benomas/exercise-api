@@ -8,23 +8,17 @@ class ExListController extends ApiController {
 
     protected $selectables = [
     	"id",
-        "name",
-    	"slug",
-    	"description",
+        "title",
     	"active",
     ];
     protected $filterables = [
     	"id",
-        "name",
-    	"slug",
-    	"description",
+        "title",
     	"active",
     ];
     protected $orderables = [
     	"id",
-        "name",
-    	"slug",
-    	"description",
+        "title",
     	"active",
     ];
 

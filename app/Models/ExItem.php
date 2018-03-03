@@ -6,19 +6,24 @@ class ExItem extends BaseModel {
 
     protected $fillable = [
 		"active",
-		"list_id",
+		"ex_list_id",
 		"value",
     ];
 
 //Relationships
 
-
+    public function exList()
+    {
+        return $this->belongsTo("App\Models\ExList");
+    }
 
 //End Relationships
 
 //Scopes
 
-
+    public function scopeOfExList($query,$exListId){
+        $query->where($this->getTable().'.ex_list_id',$exListId);
+    }
 
 // End Scopes
 

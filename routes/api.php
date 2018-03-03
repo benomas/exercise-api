@@ -30,6 +30,6 @@ Route::group(["middleware" => ["auth:api"]], function(){
         ["roles"],
         ["users"],
         ["ex-lists"],
-        ["ex-items"],
     ]);
+    apiCrudvelResource("ex-lists.ex-items");
 });

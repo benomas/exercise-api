@@ -6,14 +6,15 @@ class ExList extends BaseModel {
 
     protected $fillable = [
 		"active",
-		"description",
-		"name",
-		"slug",
+		"list_id",
+		"title",
     ];
 
 //Relationships
 
-
+    public function exItems(){
+        return $this->hasMany("\App\Models\ExItem");
+    }
 
 //End Relationships
 

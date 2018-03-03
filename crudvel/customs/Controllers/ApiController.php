@@ -13,7 +13,7 @@ class ApiController extends defaultApiController
     public function __construct(...$propertyRewriter){
         parent::__construct(...$propertyRewriter);
         //lag simulator
-        //sleep(5);
+        //sleep(1);
     }
 
     public function activate($id){

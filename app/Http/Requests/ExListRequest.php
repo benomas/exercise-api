@@ -14,15 +14,8 @@ class ExListRequest extends CrudRequest
     public function defaultRules()
     {
         $this->rules=[
-            "description" => "required",
-            "name"        => "required|unique:ex_lists,name",
-            "slug"        => "required|unique:ex_lists,slug",
-            "active"      => "boolean",
+            "title"  => "required",
+            "active" => "boolean",
         ];
-    }
-
-    public function putUpdate(){
-        $this->rules["name"] .=",".$this->currentActionId;
-        $this->rules["slug"] .=",".$this->currentActionId;
     }
 }
